@@ -1,0 +1,507 @@
+*{
+
+    
+    box-sizing: border-box;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+
+    --main-color:#0078ff;
+}
+::selection{
+    background-color: var(--main-color);
+    color: white;
+}
+    /* Scrollbar style  */
+::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,128,77,0.6);
+	border-radius: 10px;
+    
+
+  } 
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+    border-radius: 10px;
+ 
+  }
+
+  
+/* nav section */
+nav li a{
+
+    transition: 1s all;
+}
+
+nav li:hover a{
+  
+
+    border-bottom: 2px solid white ;
+ 
+ 
+}
+nav{
+    transition: 0.5s all;
+    background-color: transparent;
+}
+nav.dark {
+    background-color: #0078ff;
+}
+
+/*end of nav section */
+
+/* home section */
+
+.home{
+    background-image: url(../images/intro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.layer{
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.home h3::after{
+    content: '|';
+    animation-name: letters;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes letters{
+    0%{content: '|';}
+    1%{content: ' C |';}
+    2%{content: ' CE |';}
+    3%{content: ' CEO |';}
+    4%{content: ' CEO |';}
+    5%{content: ' CEO D|';}
+    6%{content: ' CEO De |';}
+    7%{content: ' CEO Dev |';}
+    8%{content: ' CEO DevF |';}
+    9%{content: ' CEO DevFo |';}
+    10%{content: ' CEO DevFol |';}
+    11%{content: ' CEO DevFoli |';}
+    12%{content: ' CEO DevFolio |';}
+    13%{content: ' CEO DevFoli |';}
+    14%{content: ' CEO DevFol |';}
+    15%{content: ' CEO DevFo |';}
+    16%{content: ' CEO DevF |';}
+    17%{content: ' CEO Dev |';}
+    18%{content: ' CEO De |';}
+    19%{content: ' CEO D |';}
+    20%{content: ' CEO|';}
+    21%{content: ' CE|';}
+    22%{content: ' C|';}
+    23%{content: ' |';}
+    24%{content: ' W |';}
+    25%{content: ' We |';}
+    26%{content: ' Web |';}
+    27%{content: ' Web  |';}
+    28%{content: ' Web D |';}
+    29%{content: ' Web De |';}
+    30%{content: ' Web Dev |';}
+    31%{content: ' Web Deve |';}
+    32%{content: ' Web Devel |';}
+    33%{content: ' Web Develo |';}
+    34%{content: ' Web Develop |';}
+    35%{content: ' Web Develope |';}
+    36%{content: ' Web Developer |';}
+    37%{content: ' Web Developer|';}
+    38%{content: ' Web Develope |';}
+    39%{content: ' Web Develop |';}
+    40%{content: ' Web Develo |';}
+    41%{content: ' Web Devel |';}
+    42%{content: ' Web Deve |';}
+    43%{content: ' Web Dev |';}
+    44%{content: ' Web De |';}
+    45%{content: ' Web Des |';}
+    46%{content: ' Web Desg |';}
+    47%{content: ' Web Desgi  |';}
+    48%{content: ' Web Desgin |';}
+    49%{content: ' Web Desgine |';}
+    50%{content: ' Web Desginer |';}
+    51%{content: ' Web Desgine |';}
+    52%{content: ' Web Desgin |';}
+    53%{content: ' Web Desgi |';}
+    54%{content: ' Web Desg |';}
+    55%{content: ' Web Des |';}
+    56%{content: ' Web De |';}
+    57%{content: ' Web D |';}
+    58%{content: ' Web |';}
+    59%{content: ' We |';}
+    60%{content: ' W |';}
+    61%{content: ' |';}
+    62%{content: ' F |';}
+    63%{content: ' Fr |';}
+    64%{content: ' Fro |';}
+    65%{content: ' Fron |';}
+    66%{content: ' Front |';}
+    67%{content: ' Fronte |';}
+    68%{content: ' Fronten |';}
+    69%{content: ' Frontend |';}
+    70%{content: ' Frontend  |';}
+    71%{content: ' Frontend d |';}
+    72%{content: ' Frontend de |';}
+    73%{content: ' Frontend dev |';}
+    74%{content: ' Frontend deve |';}
+    75%{content: ' Frontend devel |';}
+    76%{content: ' Frontend develo |';}
+    77%{content: ' Frontend develop |';}
+    78%{content: ' Frontend develope |';}
+    79%{content: ' Frontend developer |';}
+    80%{content: ' Frontend developer |';}
+    81%{content: ' Frontend develope |';}
+    82%{content: ' Frontend develop |';}
+    83%{content: ' Frontend develo |';}
+    84%{content: ' Frontend devel |';}
+    85%{content: ' Frontend deve |';}
+    86%{content: ' Frontend dev |';}
+    87%{content: ' Frontend de |';}
+    88%{content: ' Frontend d |';}
+    89%{content: ' Frontend  |';}
+    90%{content: ' Frontend |';}
+    91%{content: ' Fronten |';}
+    92%{content: ' Fronte |';}
+    93%{content: ' Front |';}
+    94%{content: ' Fron |';}
+    95%{content: ' Fro |';}
+    96%{content: ' Fr |';}
+    97%{content: ' F |';}
+    98%{content: ' |';}
+  
+}
+/*  end ofhome section */
+
+/* about section */
+.about {
+
+    background-color: #f1f1f1;
+}
+
+.lh{
+    line-height: 2.5rem;
+    
+}
+/* End of about section */
+
+/* services section */
+
+.services{
+    background-color: #f1f1f1;
+}
+.icon{
+   
+    font-size: 3rem;
+    width: 8rem;
+    height: 8rem; 
+    border-radius: 50%;
+    border: var(--main-color) 10px solid;
+    transition: 1s all ;
+    
+}
+.item:hover .icon{
+
+    background-color: var(--main-color);
+    border:none;
+    border: #C1DBF8 10px solid;
+    color: white;
+}
+/* End services section */
+
+
+/* shared style */
+.underline {
+
+    position: relative;
+
+    
+   
+}
+.underline::after{
+
+    content: '';
+    position: absolute;
+     height: 5px;
+    width: 5%;
+    background-color: var(--main-color); 
+
+    
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+/* shared style  */
+
+/* numbers section */
+.numbers{
+
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.numbers .layer{
+
+    background-color: rgba(0, 120, 255, 0.6);
+}
+.numbers .icon{
+    font-size: 1.5rem;
+    width: 5rem;
+    height: 5rem; 
+    border-radius: 50%;
+    border: #C1DBF8 9px solid;
+    transition: 1s all ;
+    color:white ;
+  
+
+
+}
+/* End of numbers section */
+
+/* portfolio section */
+.plus{
+    color: var(--main-color);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: var(--main-color) 1px solid ;
+}
+.card-img{
+    overflow: hidden;
+    
+}
+.card img{
+    transition: 1s all;
+}
+ .portfolio .card:hover  img{
+    transform: scale(1.3);
+}
+
+.portfolio.card{
+    border: white;
+    
+}
+.portfolio{
+    background-color: #f1f1f1;
+}
+/* End of  portfolio section */
+
+/* feedback section */
+.feedback{
+
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.feedback .layer{
+
+    background-color: rgba(0, 120, 255, 0.6);
+}
+.comment{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    color: var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+}
+/* end of feedback section */
+
+/* Start blog section */
+.badge{
+    background-color: var(--main-color);
+    font-size: 0.8rem;
+}
+.small-img{
+
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+#card-footer{
+    background-color: #f1f1f1;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #d8d8d8 ;
+    
+}
+.blog h3{
+
+    transition: 1s all;
+}
+.blog h3:hover{
+
+        color: var(--main-color);
+}
+
+.name a{
+    color: black;
+    transition: 1s all;
+}
+.name a:hover{
+
+    color: var(--main-color);
+}
+/* End of blog section */
+
+/* start footer section */
+
+.footer{
+
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.footer .layer{
+    background-color: rgba(0, 120, 255, 0.6);
+}
+.footer p{
+    line-height: 2rem;
+}
+.footer .underline::after{
+      content: '';
+    position: absolute;
+     height: 3px;
+    width: 15%;
+    background-color: var(--main-color); 
+    left: 0;
+    transform: translateX(0%);
+
+    
+    bottom: -30%;
+   
+
+   
+
+}
+.footer .icon{
+    font-size: 1.4rem;
+    width: 3rem;
+    height: 3rem; 
+    border-radius: 50%;
+    border: var(--main-color) 3px solid;
+    transition: 1s all ;
+
+
+}
+.footer .icon:hover {
+    background-color: var(--main-color);
+    border:none;
+    border: #C1DBF8 3px solid;
+    color: white;
+}
+.footer a{
+
+    color: black;
+    transition: 1s all;
+}
+.footer .icon:hover a{
+
+    color: white;
+}
+.aurthor span{
+
+    position: relative;
+}
+.aurthor h2::after{
+    content: '|';
+    position: absolute;
+    animation-name: aurthor;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transform: translateX(-50%);
+
+
+
+}
+@keyframes aurthor{
+
+    0%{content: 'A |';}
+    1.5%{content: 'Ab |';}
+    3%{content: 'Abd |';}
+    4.5%{content: 'Abde |';}
+    6%{content: 'Abdel |';}
+    7.5%{content: 'Abdelr |';}
+    9%{content: 'Abdelrh |';}
+    10.5%{content: 'Abdelrhm |';}
+    12%{content: 'Abdelrhma |';}
+    13.5%{content: 'Abdelrhman |';}
+    15%{content: 'Abdelrhman  |';}
+    16.5%{content: 'Abdelrhman M |';}
+    18%{content: 'Abdelrhman Mo |';}
+    19.5%{content: 'Abdelrhman Moh |';}
+    21%{content: 'Abdelrhman Moha |';}
+    22.5%{content: 'Abdelrhman Moham |';}
+    24%{content: 'Abdelrhman Mohame |';}
+    25.5%{content: 'Abdelrhman Mohamed |';}
+    27%{content: 'Abdelrhman Mohamed|';}
+    28.5%{content: 'Abdelrhman Mohame |';}
+    30%{content: 'Abdelrhman Moham |';}
+    31.5%{content: 'Abdelrhman Moha |';}
+    33%{content: 'Abdelrhman Moh |';}
+    34.5%{content: 'Abdelrhman Mo |';}
+    36%{content: 'Abdelrhman M |';}
+    37.5%{content: 'Abdelrhman  |';}
+    39%{content: 'Abdelrhman |';}
+    40.5%{content: 'Abdelrhma |';}
+    42%{content: 'Abdelrhm |';}
+    43.5%{content: 'Abdelrh |';}
+    45%{content: 'Abdelr |';}
+    46.5%{content: 'Abdel |';}
+    48%{content: 'Abde |';}
+    49.5%{content: 'Abd |';}
+    51%{content: 'Ab |';}
+    52.5%{content: 'A |';}
+    54%{content: 'ع |';}
+    55.5%{content: 'عب |';}
+    57%{content: 'عبد |';}
+    58.5%{content: 'عبدا |';}
+    60%{content: 'عبدال |';}
+    61.5%{content: 'عبدالر |';}
+    63%{content: 'عبدالرح |';}
+    64.5%{content: 'عبدالرحم |';}
+    66%{content: 'عبدالرحمن |';}
+    67.5%{content: ' عبدالرحمن |';}
+    69%{content: ' عبدالرحمن م|';}
+    70.5%{content: 'عبدالرحمن مح |';}
+    72%{content: 'عبدالرحمن محم |';}
+    73.5%{content: 'عبدالرحمن محمد |';}
+    75%{content: 'عبدالرحمن محمد |';}
+    76.5%{content: 'عبدالرحمن محم |';}
+    78%{content: 'عبدالرحمن مح |';}
+    79.5%{content: ' عبدالرحمن م|';}
+    81%{content: ' عبدالرحمن |';}
+    82.5%{content: 'عبدالرحمن |';}
+    84%{content: 'عبدالرحم |';}
+    85.5%{content: 'عبدالرح |';}
+    87%{content: 'عبدالر |';}
+    88.5%{content: 'عبدال |';}
+    90%{content: 'عبدا |';}
+    91.5%{content: 'عبد |';}
+    93%{content: 'عب |';}
+    94.5%{content: 'ع |';}
+  
+
+   
+
+}
+.footer button{
+
+    transition: 1s all ;
+}
+.footer button:hover{
+
+    box-shadow: #f1f1f1 ;
+}
+
+    
+/* end of footer section */
